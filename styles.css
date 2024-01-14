@@ -1,40 +1,53 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #a50044; /* Barcelona color */
-    font-family: Arial, sans-serif;
-  }
-  
-  .landing {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  img {
-    width: 80%;
-  }
-  
-  .goals {
-    margin-top: 20px;
-  }
-  
-  .goal {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    margin: 0 20px;
-  }
-  
-  #left-goal {
-    background-image: url('left-goal-image.jpg'); /* Add an image for the left goal */
-  }
-  
-  #center-goal {
-    background-image: url('center-goal-image.jpg'); /* Add an image for the center goal */
-  }
-  
-  #right-goal {
-    background-image: url('right-goal-image.jpg'); /* Add an image for the right goal */
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-color: #a50044; /* Barcelona color */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.landing {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 80%;
+}
+
+.goals {
+  display: flex;
+  justify-content: space-around;
+}
+
+.goal {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+}
+
+#left-goal {
+  background-image: url('left-goal-image.jpg'); /* Add an image for the left goal */
+}
+
+#center-goal {
+  background-image: url('center-goal-image.jpg'); /* Add an image for the center goal */
+}
+
+#right-goal {
+  background-image: url('right-goal-image.jpg'); /* Add an image for the right goal */
+}
+
+.center-content,
+.right-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.right-content button {
+  margin: 0 10px;
+}
